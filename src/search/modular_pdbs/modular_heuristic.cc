@@ -478,7 +478,7 @@ namespace pdbs3 {
                 generator_choice=1; cout<<"Forcing generator_choice to non-CGamer-style always, for debugging!"<<endl;
             }
             else if(only_gamer){
-                generator_choice=0; cout<<"Forcing generator_choice to Gamer-style always, for debugging!"<<endl;
+                generator_choice=0; // cout<<"Forcing generator_choice to Gamer-style always, for debugging!"<<endl;
             }
             DEBUG_COMP(cout<<"time:"<<utils::g_timer()<<",generator_choice:"<<generator_choice<<flush<<endl;);
             float start_time=utils::g_timer();
