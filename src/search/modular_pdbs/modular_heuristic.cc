@@ -35,7 +35,7 @@ std::ostream & operator<<(std::ostream &os, vector<int> pattern){
     return os;
 }
 
-bool recompute_additive_sets=false;
+bool recompute_additive_sets=true;
 
 //PatternCollectionGeneratorComplementary is to be the driver for 8 PDB-based options
 //RandomCollectionGeneration: CBP, RBP, CGamer, the one used by *Pommerening et al. 
