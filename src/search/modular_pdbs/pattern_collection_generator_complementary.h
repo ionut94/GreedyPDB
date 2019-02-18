@@ -52,7 +52,7 @@ class PatternCollectionContainer {
       return pc;
     }
     void pop_back() {
-      std::cout<<"complementary_pop_back of pc,inital_size:"<<pc.size()<<",";
+//      std::cout<<"complementary_pop_back of pc,inital_size:"<<pc.size()<<",";
       pc.pop_back();
       std::cout<<"final_size:"<<pc.size()<<std::endl;
     }

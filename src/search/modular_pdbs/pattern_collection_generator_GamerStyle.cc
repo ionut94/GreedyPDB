@@ -48,7 +48,7 @@ using namespace std;
 //     setInterestingPCs<-LocalSearch(P,PDBEval,MaxSize,CostPartition)
 //     selectedPCs<-SubsetSelection(setInterestingPCs,PDBEval,ComPDBs)
 //     generatedPDBs <-GenPDB(selectedPCs)
-//     H<-Re-evaluate (H¿generatedPCs)
+//     H<-Re-evaluate (Hï¿½generatedPCs)
 //     Learning(BinPackingRewards)
 //ComPDBs (Hl)
 namespace pdbs3 {
@@ -70,21 +70,21 @@ std::ostream & operator<<(std::ostream &os, vector<int> pattern){
   void PatternCollectionGeneratorGamer::initialize() {
     //1) Get initial abstraction
     for (auto goal : g_goal) pattern.insert(goal.first);
-    cout<<"Gamer, initial pattern made of all goals:"<<pattern<<endl;
+//    cout<<"Gamer, initial pattern made of all goals:"<<pattern<<endl;
     
     candidate_pattern=candidate_vars();
-    cout<<"initial candidate_pattern for Gamer-Style selection, candidate_vars:"<<candidate_pattern.size()<<endl;
+//    cout<<"initial candidate_pattern for Gamer-Style selection, candidate_vars:"<<candidate_pattern.size()<<endl;
   }
 
   PatternCollectionContainer PatternCollectionGeneratorGamer::generate(){
-    cout<<"Calling PatternCollectionGeneratorGamer"<<endl;
+//    cout<<"Calling PatternCollectionGeneratorGamer"<<endl;
     PatternCollectionContainer PC;
     if(candidate_pattern.empty()){
-      cout<<"No more possible candidates for Gamer-Style Selection"<<endl;
+//      cout<<"No more possible candidates for Gamer-Style Selection"<<endl;
       return PC;
     }
     else{
-      cout<<"time:"<<utils::g_timer()<<",pattern:"<<pattern<<",candidate list:"<<candidate_pattern<<endl;
+//      cout<<"time:"<<utils::g_timer()<<",pattern:"<<pattern<<",candidate list:"<<candidate_pattern<<endl;
       while(!candidate_pattern.empty()){
         child_pattern=pattern;
         child_pattern.insert(candidate_pattern.back());
@@ -134,15 +134,15 @@ void PatternCollectionGeneratorGamer::confirm(set<int> input_pattern){
   pattern=input_pattern;
   candidate_pattern=candidate_vars();
   
-  cout<<"updated Gamer_pattern:"<<pattern<<",new Gamer-style candidate vars:"<<child_pattern<<endl;
+//  cout<<"updated Gamer_pattern:"<<pattern<<",new Gamer-style candidate vars:"<<child_pattern<<endl;
 }
 void PatternCollectionGeneratorGamer::check_improv(double input_avg_h=0){
   if(avg_h_val==0){
-    cout<<"First call to check_improv,initial avg_h:"<<input_avg_h<<endl;
+//    cout<<"First call to check_improv,initial avg_h:"<<input_avg_h<<endl;
     return;
   }
   else if(input_avg_h>avg_h_val){
-    cout<<"Gamer-style,avg_h_val raised to:,"<<input_avg_h<<",from:,"<<avg_h_val<<",confirming new pattern"<<endl;
+//    cout<<"Gamer-style,avg_h_val raised to:,"<<input_avg_h<<",from:,"<<avg_h_val<<",confirming new pattern"<<endl;
     avg_h_val=input_avg_h;
   }
 }

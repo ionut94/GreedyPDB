@@ -28,7 +28,7 @@ vector<Pattern> FirstFitIncreasingRelatedBinPacker::bin_packing(std::shared_ptr<
     //pdb_max_size=min(pdb_max_size,pow(10,initial_max_target_size));
     //pdb_max_size=max(pdb_max_size,pow(10,min_target_size));
 
-    cout << "Starting bin packing First Fit Increasing related, pdb_max_size:" << pdb_max_size << endl;
+//    cout << "Starting bin packing First Fit Increasing related, pdb_max_size:" << pdb_max_size << endl;
 
     VariablesProxy variables = task_proxy->get_variables();
 
