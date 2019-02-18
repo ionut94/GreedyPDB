@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/builds/release64/search/CMakeFiles/libcudd.a"
+		},
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/builds/release64/search/CMakeFiles/libcudd.a.rule"
+		},
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/builds/release64/search/CMakeFiles/libcudd.a-complete.rule"
+		},
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/src/search/cudd-3.0.0/src/libcudd.a-stamp/libcudd.a-install.rule"
+		},
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/src/search/cudd-3.0.0/src/libcudd.a-stamp/libcudd.a-mkdir.rule"
+		},
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/src/search/cudd-3.0.0/src/libcudd.a-stamp/libcudd.a-download.rule"
+		},
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/src/search/cudd-3.0.0/src/libcudd.a-stamp/libcudd.a-update.rule"
+		},
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/src/search/cudd-3.0.0/src/libcudd.a-stamp/libcudd.a-patch.rule"
+		},
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/src/search/cudd-3.0.0/src/libcudd.a-stamp/libcudd.a-configure.rule"
+		},
+		{
+			"file" : "/users/k1333921/Experiments/runPlanningTool/planners/complementaryGamer/src/search/cudd-3.0.0/src/libcudd.a-stamp/libcudd.a-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libcudd.a"
+		],
+		"name" : "libcudd.a"
+	}
+}
