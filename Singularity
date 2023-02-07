@@ -41,7 +41,7 @@ From: ubuntu:xenial
         --plan-file $PLANFILE \
         $DOMAINFILE \
         $PROBLEMFILE \
-        --search "astar(modular_pdb(modular_rbp(time_limit=200),rand_walk(time_limit=10),900,pdb_factory=modular_symbolic,create_perimeter=false,only_gamer=true))"
+        --search "astar(modular_pdb(modular_rbp(time_limit=200),rand_walks(time_limit=10),900,pdb_factory=modular_symbolic,create_perimeter=false,only_gamer=true))"
 
 ## Update the following fields with meta data about your submission.
 ## Please use the same field names and use only one line for each value.
